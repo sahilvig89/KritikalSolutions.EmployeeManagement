@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1520F63-7850-4FDF-9656-822F108A8C93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{202F7DE5-F692-4901-8CF7-C55F80B4E8F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3108F406-6A80-4063-86F7-617D2958671E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{89A046C7-42D6-4927-801F-CFD1BCE2F74F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9F6F6492-689A-4071-84F9-36BDB53293B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A867C72C-7E86-4732-9CC2-81E6EFFBE12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Application.UnitTest", "KritikalSolutions.EmployeeManagement.Application.UnitTest\KritikalSolutions.EmployeeManagement.Application.UnitTest.csproj", "{9F2101AE-E54E-431C-A13F-3E9D281E98B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Api", "KritikalSolutions.EmployeeManagement.Api\KritikalSolutions.EmployeeManagement.Api.csproj", "{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Application", "KritikalSolutions.EmployeeManagement.Application\KritikalSolutions.EmployeeManagement.Application.csproj", "{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Domain", "KritikalSolutions.EmployeeManagement.Domain\KritikalSolutions.EmployeeManagement.Domain.csproj", "{D9026FDC-457B-466E-97AB-7F41147EAA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Infrastructure", "KritikalSolutions.EmployeeManagement.Infrastructure\KritikalSolutions.EmployeeManagement.Infrastructure.csproj", "{4DB93674-297F-412E-9D7C-2A7BEE006FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritikalSolutions.EmployeeManagement.Persistence", "KritikalSolutions.EmployeeManagement.Persistence\KritikalSolutions.EmployeeManagement.Persistence.csproj", "{E0E53339-54E4-4C5F-ACF0-22BE15D5394F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F2101AE-E54E-431C-A13F-3E9D281E98B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2101AE-E54E-431C-A13F-3E9D281E98B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2101AE-E54E-431C-A13F-3E9D281E98B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2101AE-E54E-431C-A13F-3E9D281E98B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9026FDC-457B-466E-97AB-7F41147EAA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9026FDC-457B-466E-97AB-7F41147EAA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9026FDC-457B-466E-97AB-7F41147EAA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9026FDC-457B-466E-97AB-7F41147EAA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB93674-297F-412E-9D7C-2A7BEE006FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB93674-297F-412E-9D7C-2A7BEE006FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB93674-297F-412E-9D7C-2A7BEE006FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB93674-297F-412E-9D7C-2A7BEE006FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E53339-54E4-4C5F-ACF0-22BE15D5394F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E53339-54E4-4C5F-ACF0-22BE15D5394F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E53339-54E4-4C5F-ACF0-22BE15D5394F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E53339-54E4-4C5F-ACF0-22BE15D5394F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{202F7DE5-F692-4901-8CF7-C55F80B4E8F5} = {C1520F63-7850-4FDF-9656-822F108A8C93}
+		{3108F406-6A80-4063-86F7-617D2958671E} = {C1520F63-7850-4FDF-9656-822F108A8C93}
+		{89A046C7-42D6-4927-801F-CFD1BCE2F74F} = {C1520F63-7850-4FDF-9656-822F108A8C93}
+		{9F6F6492-689A-4071-84F9-36BDB53293B8} = {C1520F63-7850-4FDF-9656-822F108A8C93}
+		{9F2101AE-E54E-431C-A13F-3E9D281E98B8} = {A867C72C-7E86-4732-9CC2-81E6EFFBE12A}
+		{CDD8EE52-76D6-48A0-8CF5-2F543C3E8DAD} = {202F7DE5-F692-4901-8CF7-C55F80B4E8F5}
+		{1FCCC019-B3F5-4BFD-BF9A-315D8A96F2BA} = {3108F406-6A80-4063-86F7-617D2958671E}
+		{D9026FDC-457B-466E-97AB-7F41147EAA3F} = {3108F406-6A80-4063-86F7-617D2958671E}
+		{4DB93674-297F-412E-9D7C-2A7BEE006FB0} = {89A046C7-42D6-4927-801F-CFD1BCE2F74F}
+		{E0E53339-54E4-4C5F-ACF0-22BE15D5394F} = {89A046C7-42D6-4927-801F-CFD1BCE2F74F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14A1BAD7-5517-4F23-8FCC-F4A1290B70FB}
+	EndGlobalSection
+EndGlobal
