@@ -1,11 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KritikalSolutions.EmployeeManagement.Application\KritikalSolutions.EmployeeManagement.Application.csproj" />
+    <ProjectReference Include="..\KritikalSolutions.EmployeeManagement.Persistence\KritikalSolutions.EmployeeManagement.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,11 @@
+using KritikalSolutions.EmployeeManagement.Application;
+using KritikalSolutions.EmployeeManagement.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
 
 namespace KritikalSolutions.EmployeeManagement.Api
 {
@@ -24,7 +21,9 @@ namespace KritikalSolutions.EmployeeManagement.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            AddSwagger(services);
+            services.AddApplicationService();
+            services.AddPersistenceServices(Configuration);
             services.AddControllers();
         }
 
@@ -37,6 +36,13 @@ namespace KritikalSolutions.EmployeeManagement.Api
             }
 
             app.UseRouting();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Kritikal Solutions Employee Management API");
+            });
+
+            app.UseCors("Open");
 
             app.UseAuthorization();
 
@@ -45,5 +51,19 @@ namespace KritikalSolutions.EmployeeManagement.Api
                 endpoints.MapControllers();
             });
         }
+
+        #region Private Method to add Swagger
+        private void AddSwagger(IServiceCollection services)
+        {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Kritikal Solutions Employee Management Api."
+                });
+            });
+        }
+        #endregion
     }
 }
